@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Attendance System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css/animate.min.css" rel="stylesheet"> <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.css" rel="stylesheet"> <!-- WOW.js -->
+    <style>
+        /* Background Gradient */
+        body {
+            background: linear-gradient(135deg, #6610f2, #007bff);
+            color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        /* Login Card */
+        .login-card {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        /* Input Fields */
+        .form-control {
+            border-radius: 10px;
+            border: 2px solid #ced4da;
+            padding: 12px;
+            transition: all 0.4s ease;
+            background-color: #f8f9fa;
+        }
+
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+
+        /* Placeholder Styling */
+        ::placeholder {
+            color: #6c757d;
+            font-style: italic;
+            font-size: 0.9rem;
+            opacity: 1; /* Ensures it's fully visible */
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        /* Placeholder Animation on Focus */
+        .form-control:focus::placeholder {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+
+        /* Label Styling */
+        .form-label {
+            color: #495057; /* Dark gray for visibility */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .form-control:focus ~ .form-label {
+            color: #007bff; /* Blue on focus */
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background: linear-gradient(90deg, #007bff, #6610f2);
+            border: none;
+            font-weight: bold;
+            transition: all 0.4s ease;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #6610f2, #007bff);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Header Styling */
+        .login-header {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #343a40;
+        }
+
+        .login-subtext {
+            text-align: center;
+            color: #495057;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            color: #ced4da;
+            margin-top: 1rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .wow {
+            visibility: hidden;
+        }
+
+        /* Keyframes for Floating Inputs */
+        @keyframes float {
+            from {
+                transform: translateY(10px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .floating-input {
+            animation: float 1.2s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card wow fadeInUp" data-wow-duration="1.5s">
+        <!-- Login Header -->
+        <div class="login-header">Login</div>
+        <p class="login-subtext">Enter your credentials to access the attendance system</p>
+
+        <!-- Login Form -->
+        <form method="POST" action="/login">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" id="username" name="username" class="form-control floating-input" placeholder="Enter your username" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password" class="form-control floating-input" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mt-3">Login</button>
+        </form>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Developed by Gandham Mani Saketh</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> <!-- WOW.js -->
+    <script>
+        // Initialize WOW.js
+        new WOW().init();
+    </script>
+</body>
+</html>
