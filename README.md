@@ -30,16 +30,7 @@ The **FaceTrace Smart Attendance System** is a user-friendly application designe
 
 
 
-## version1
 
-
-https://github.com/user-attachments/assets/3cd1fad3-9927-4643-8ff0-33c47e9598e0
-
-
-![image](https://github.com/user-attachments/assets/676c4579-ca26-43db-b7d8-83900806948d)
-
-
-![image](https://github.com/user-attachments/assets/15cb3bb9-334f-4773-bdc6-15d97c960dd9)
 
 ## version 2
 
@@ -54,5 +45,14 @@ https://github.com/user-attachments/assets/700c9f7b-2e63-4481-82a8-1bdef17a4f90
 https://github.com/user-attachments/assets/237c5d6a-aaa6-4630-ae14-eebd155624d6
 
 
+## version1
 
+
+https://github.com/user-attachments/assets/3cd1fad3-9927-4643-8ff0-33c47e9598e0
+
+
+![image](https://github.com/user-attachments/assets/676c4579-ca26-43db-b7d8-83900806948d)
+
+
+![image](https://github.com/user-attachments/assets/15cb3bb9-334f-4773-bdc6-15d97c960dd9)
 
